@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+//Question 1    
+<category>
+    <pattern>q1</pattern>
+    <template><bot name="q1"/></template>
+</category>
+<category>
+    <pattern>* #</pattern>
+    <that><bot name="q1"/></that>
+    <template>Please answer with a simple 'Yes' or 'No'.<br/>
+    <srai>q1</srai>
+    </template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that><bot name="q1"/></that>
+    <template><think> <set name="a1">1</set> </think> <srai>q2</srai></template>
+</category>
+<category>
+    <pattern>y</pattern>
+    <that><bot name="q1"/></that>
+    <template><srai>yes</srai></template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that><bot name="q1"/></that>
+    <template><think> <set name="a1">0</set></think><srai>q2</srai> </template>
+</category>
+<category>
+    <pattern>n</pattern>
+    <that><bot name="q1"/></that>
+    <template><srai>no</srai></template>
+</category>
+
+//Question 2
+<category>
+    <pattern>q2</pattern>
+    <template><bot name="q2"/></template>
+</category>
+<category>
+    <pattern>* #</pattern>
+    <that><bot name="q2"/></that>
+    <template>Please answer with a simple 'Yes' or 'No'.<br/>
+    <srai>q2</srai>
+    </template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that><bot name="q2"/></that>
+    <template><think> <set name="a2">1</set></think><srai>q3</srai></template>
+</category>
+<category>
+    <pattern>y</pattern>
+    <that><bot name="q2"/></that>
+    <template><srai>yes</srai></template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that><bot name="q2"/></that>
+    <template><think><set name="a2">0</set></think><srai>q3</srai></template>
+</category>
+<category>
+    <pattern>n</pattern>
+    <that><bot name="q2"/></that>
+    <template><srai>no</srai></template>
+</category>
+
+
+//Question 3
+<category>
+    <pattern>q3</pattern>
+    <template><bot name="q3"/></template>
+</category>
+<category>
+    <pattern>* #</pattern>
+    <that><bot name="q3"/></that>
+    <template>Please answer with a simple 'Yes' or 'No'.<br/>
+    <srai>q2</srai></template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that><bot name="q3"/></that>
+    <template><think><set name="a3">1</set></think><srai>q4</srai></template>
+</category>
+<category>
+    <pattern>y</pattern>
+    <that><bot name="q3"/></that>
+    <template><srai>yes</srai></template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that><bot name="q3"/></that>
+    <template><think><set name="a3">0</set></think><srai>q4</srai></template>
+</category>
+<category>
+    <pattern>n</pattern>
+    <that><bot name="q3"/></that>
+    <template><srai>no</srai></template>
+</category>
+
+//Question 4
+<category>
+    <pattern>q4</pattern>
+    <template><bot name="q4"/></template>
+</category>
+<category>
+    <pattern>* #</pattern>
+    <that><bot name="q4"/></that>
+    <template>Please answer with a simple 'Yes' or 'No'.<br/>
+    <srai>q2</srai></template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that><bot name="q4"/></that>
+    <template><think><set name="a4">1</set></think><srai>suggest</srai></template>
+</category>
+<category>
+    <pattern>y</pattern>
+    <that><bot name="q4"/></that>
+    <template><srai>yes</srai></template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that><bot name="q4"/></that>
+    <template><think> <set name="a4">0</set></think><srai>suggest</srai></template>
+</category>
+<category>
+    <pattern>n</pattern>
+    <that><bot name="q4"/></that>
+    <template><srai>no</srai></template>
+</category>
+
+//Other
+<category>
+    <pattern>suggest</pattern>
+    <template><get name="yourname"></get>, 
+    <srai><get name="a1"/><get name="a2"/><get name="a3"/><get name="a4"/></srai></template>
+</category>
+
+
+<category>
+    <pattern>0000</pattern>
+    <template>I advise you to work as a <bot name="job4"></bot> </template>
+</category>
+
+<category>
+    <pattern>0001</pattern>
+    <template>I advise you to work as a <bot name="job2"></bot> </template>
+</category>
+
+<category>
+    <pattern>0010</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+
+<category>
+    <pattern>0011</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+
+<category>
+    <pattern>0100</pattern>
+    <template>I advise you to work as a <bot name="job4"></bot> </template>
+</category>
+
+<category>
+    <pattern>0101</pattern>
+    <template>I advise you to work as a <bot name="job2"></bot> </template>
+</category>
+
+<category>
+    <pattern>0110</pattern>
+    <template>I advise you to work as a <bot name="job4"></bot> </template>
+</category>
+
+<category>
+    <pattern>0111</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+
+<category>
+    <pattern>1000</pattern>
+    <template>I advise you to work as a <bot name="job5"></bot> </template>
+</category>
+
+<category>
+    <pattern>1001</pattern>
+    <template>I advise you to work as a <bot name="job1"></bot> </template>
+</category>
+
+<category>
+    <pattern>1010</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+
+<category>
+    <pattern>1011</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+
+<category>
+    <pattern>1100</pattern>
+    <template>I advise you to work as a <bot name="job1"></bot> </template>
+</category>
+
+<category>
+    <pattern>1101</pattern>
+    <template>I advise you to work as a <bot name="job1"></bot> </template>
+</category>
+
+<category>
+    <pattern>1110</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+
+<category>
+    <pattern>1111</pattern>
+    <template>I advise you to work as a <bot name="job3"></bot> </template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <template>I am not sure what you are saying. Please type hello to start.</template>
+</category>
+<category>
+    <pattern>Hello</pattern>
+    <template>What is your name</template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>what is your name</that>
+    <template><think><set name="yourname"><star/></set></think><srai>start</srai></template>
+</category>
+<category>
+    <pattern>start</pattern>
+    <template>Welcome <get name="yourname"/>, glad to meet you.
+    I am a suggestion Bot.  I will suggest a career for you. <bot name="start"/><br/>
+    <srai>go</srai>
+    </template>
+</category>
+<category>
+    <pattern>go</pattern>
+    <template><bot name="please"/></template>
+</category>
+<category>
+    <pattern>yes</pattern>
+   <that><bot name="please"/></that>
+    <template><srai>q1</srai></template>
+</category>
+<category>
+    <pattern>y</pattern>
+    <that><bot name="please"/></that>
+    <template>yes</template>
+</category>
+
+</aiml>
