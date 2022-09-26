@@ -1,0 +1,66 @@
+-   **A: EXPLANATION OF CHATBOT FUNCTIONALITIES**
+    -   The user can use the chat bot to be offered a suggestion on a career. The bot will ask a series of questions. Based on the answers to those questions the bot will make a one out of five possible suggestions. The bot is not capable of any other conversation and any attempt will result in the bot stating “I am not sure what you are saying. Please type hello to start.” Once the user types ‘hello’, the bot will ask the user for their name. The bot will then proceed to ask four support questions.
+-   **B: COMPUTING JOB TYPES**
+    1.  Network Administrator
+        1.  Software Developer
+        2.  Cybersecurity Analyst
+        3.  Database Administrator
+        4.  IT Support Administrator
+-   **C: CHATBOT CODE FILES**
+    -   CareerBot_AIML_files.zip
+    -   This file contains all the files exported from pandorabots.com
+    -   The chatbot requires two files: udc.aiml and careerbot.properties
+-   **D: CHATBOT TRAINING CASES**
+    -   Network Administrator
+        -   Enjoys working with hardware.
+            -   Can sit at the same computer all day.
+            -   Is not comfortable overseeing all the company security
+            -   Enjoys working by themselves.
+        -   Software Developer
+            -   Enjoys working with software.
+            -   Can sit at the same computer all day.
+            -   Is not comfortable overseeing all the company security
+            -   Enjoys working with others.
+        -   Cybersecurity Analyst
+            -   Enjoys working with hardware and software.
+            -   Can sit at the same computer all day or move around.
+            -   Is comfortable overseeing all the company security
+            -   Enjoys working with others or by themselves.
+        -   Database Administrator
+            -   Enjoys working with software.
+            -   Can sit at the same computer all day or move around.
+            -   Is not comfortable overseeing all the company security
+            -   Enjoys working by themselves.
+        -   IT Support Administrator
+            -   Enjoys working with hardware.
+            -   Moves around.
+            -   Is not comfortable overseeing all the company security
+            -   Enjoys working by themselves.
+-   **E: INSTALLATION MANUAL**
+    -   To import as a new bot:
+        -   Through a browser, log into https://pandorabots.com.
+        -   Click on the plus sign to add a new chatbot on <https://pandorabots.com>.
+        -   Create a name and choose blank bot for content.
+        -   Click Create Bot
+        -   Click on edit, then click on code editor
+        -   Click on udc under the AIML tag.
+        -   Copy the provide aiml and paste it into the udc file, making sure to replace the entire contents of the file with the provided code.
+        -   Click on properties under the System tag.
+        -   Copy the provided properties into the properties file, making sure to replace the entire contents of the file with the provided code.
+        -   Click on the save icons, or click File then Save, or press Ctrl+s.
+        -   Click the chat icon to load the chat.
+        -   Say ‘hello’.
+    -   To use the online version without creating a new bot:
+        -   Through a browser, log into pandorabots.com.
+        -   Go to [https://home.pandorabots.com/dash/bot](https://home.pandorabots.com/dash/bot-directory)[-](https://home.pandorabots.com/dash/bot-directory)[directory](https://home.pandorabots.com/dash/bot-directory)
+        -   In the search bar, type: “YoophBotC951”
+        -   From the search results: click YoophBotC951
+        -   Click the chat icon on the bottom right
+        -   Say ‘hello’
+-   **F: CHATBOT ENVIRONMENT**
+    -   The chatbot is designed to operate inside the pandorabots.com website. The AIML code is compliant with AIML 2.0 and should be valid for any AIML chatbot enabled environment. The code is untested in any other environment currently.
+    -   The questions and career types are entered in under the system properties file.
+-   **G: MONITORING AND MAINTAINING**
+    -   The application is not self-improving and should not need to be maintained. It could be upgraded to include basic chat features. As of now the AI will respond based on the yes or no response to four questions, but it could be improved to gather this information without directly asking the user. It could ask the user other questions and attempt to gain the required information indirectly.
+-   **H: PANOPTO RECORDING**
+    -   Link to Recording:
